@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute Pro Plumbing - Brand Guidelines</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #FAF8F3;
+            color: #4a6875;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            z-index: 1000;
+            padding: 16px 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1E4A6A;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #3D3D3D;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #E76F51;
+        }
+
+        /* Hero */
+        .hero {
+            background: #F4EDE4;
+            color: #3D3D3D;
+            padding: 120px 24px 80px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: 1px;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .hero p {
+            font-size: 24px;
+            opacity: 0.9;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .version {
+            font-size: 16px;
+            margin-top: 12px;
+            opacity: 0.7;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 24px;
+        }
+
+        /* Section */
+        section {
+            margin-bottom: 100px;
+        }
+
+        .section-number {
+            display: inline-block;
+            background: #E76F51;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #1E4A6A;
+            margin-bottom: 32px;
+            letter-spacing: -1px;
+        }
+
+        h3 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #1E4A6A;
+            margin-top: 48px;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #3D3D3D;
+            margin-top: 32px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        /* Logo Grid */
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            margin: 48px 0;
+        }
+
+        .logo-card {
+            background: white;
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .logo-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .logo-card h4 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #1E4A6A;
+        }
+
+        .logo-display {
+            background: #F4EDE4;
+            padding: 32px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 150px;
+        }
+
+        .logo-display img {
+            max-width: 100%;
+            height: auto;
+            max-height: 120px;
+        }
+
+        .use-case {
+            font-size: 14px;
+            color: #1E4A6A;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .description {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        /* Navigation Mockups */
+        .nav-mockup-container {
+            margin: 48px 0;
+        }
+
+        .nav-mockup {
+            margin-bottom: 40px;
+        }
+
+        .nav-label {
+            display: inline-block;
+            background: #E76F51;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .mock-nav-bar {
+            background: white;
+            border-radius: 16px;
+            padding: 20px 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .mock-nav-bar:hover {
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+            border-color: #E0EFF0;
+            transform: translateY(-2px);
+        }
+
+        .mock-logo-container {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex: 0 0 auto;
+        }
+
+        .mock-logo-svg {
+            height: auto;
+            width: auto;
+            max-width: 200px;
+            transition: transform 0.3s ease;
+        }
+
+        .mock-nav-bar:hover .mock-logo-svg {
+            transform: scale(1.05);
+        }
+
+        .mock-nav-links {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+            flex: 1;
+            justify-content: center;
+        }
+
+        .mock-nav-link {
+            color: #3D3D3D;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 8px 0;
+            cursor: pointer;
+        }
+
+        .mock-nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #E76F51;
+            transition: width 0.3s ease;
+        }
+
+        .mock-nav-link:hover {
+            color: #1E4A6A;
+        }
+
+        .mock-nav-link:hover::after {
+            width: 100%;
+        }
+
+        .mock-nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex: 0 0 auto;
+        }
+
+        .mock-phone-number {
+            color: #1E4A6A;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            letter-spacing: -0.5px;
+            transition: color 0.3s ease;
+        }
+
+        .mock-phone-number:hover {
+            color: #E76F51;
+        }
+
+        .mock-cta-button {
+            background: #E76F51;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(231, 111, 81, 0.3);
+            cursor: pointer;
+        }
+
+        .mock-cta-button:hover {
+            background: #d45a3a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(231, 111, 81, 0.4);
+        }
+
+        .mock-phone-icon {
+            width: 18px;
+            height: 18px;
+        }
+
+        .nav-description {
+            margin-top: 16px;
+            padding: 16px 24px;
+            background: #E0EFF0;
+            border-radius: 12px;
+            border-left: 4px solid #2A9D8F;
+        }
+
+        .nav-description p {
+            color: #3D3D3D;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        .nav-description strong {
+            color: #1E4A6A;
+            font-weight: 600;
+        }
+
+        /* Color Palette */
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            margin: 32px 0;
+        }
+
+        .color-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .color-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .color-swatch {
+            height: 120px;
+            width: 100%;
+        }
+
+        .color-info {
+            padding: 20px;
+        }
+
+        .color-name {
+            font-weight: 700;
+            font-size: 18px;
+            color: #1E4A6A;
+            margin-bottom: 4px;
+        }
+
+        .color-hex {
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            color: #3D3D3D;
+            margin-bottom: 12px;
+        }
+
+        .color-usage {
+            font-size: 13px;
+            color: #3D3D3D;
+            line-height: 1.5;
+        }
+
+        /* Typography Samples */
+        .type-sample {
+            background: white;
+            padding: 32px;
+            border-radius: 12px;
+            margin: 24px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .h1-sample {
+            font-size: 48px;
+            font-weight: 700;
+            color: #1E4A6A;
+            margin-bottom: 16px;
+        }
+
+        .h2-sample {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1E4A6A;
+            margin-bottom: 16px;
+        }
+
+        .h3-sample {
+            font-size: 24px;
+            font-weight: 600;
+            color: #3D3D3D;
+            margin-bottom: 16px;
+        }
+
+        .body-sample {
+            font-size: 18px;
+            font-weight: 400;
+            color: #3D3D3D;
+            line-height: 1.8;
+        }
+
+        /* Font Pairing */
+        .font-pair {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            margin-bottom: 32px;
+        }
+
+        .font-label {
+            display: inline-block;
+            background: #E0EFF0;
+            color: #1E4A6A;
+            padding: 6px 16px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
+        }
+
+        .montserrat-example {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .merriweather-example {
+            font-family: 'Merriweather', serif;
+        }
+
+        .heading-sample {
+            font-size: 36px;
+            font-weight: 700;
+            color: #1E4A6A;
+            margin-bottom: 16px;
+        }
+
+        .testimonial-sample {
+            font-size: 20px;
+            font-weight: 400;
+            color: #3D3D3D;
+            line-height: 1.8;
+            font-style: italic;
+            margin-bottom: 16px;
+        }
+
+        .testimonial-author {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1E4A6A;
+            font-style: normal;
+        }
+
+        /* Testimonial Cards */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
+            margin-top: 32px;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .quote-icon {
+            font-size: 64px;
+            color: #E0EFF0;
+            line-height: 1;
+            margin-bottom: 16px;
+            font-family: Georgia, serif;
+        }
+
+        .testimonial-text {
+            font-family: 'Merriweather', serif;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #3D3D3D;
+            font-style: italic;
+            margin-bottom: 24px;
+        }
+
+        .testimonial-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding-top: 24px;
+            border-top: 2px solid #E0EFF0;
+        }
+
+        .testimonial-avatar {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #E76F51, #2A9D8F);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .testimonial-info {
+            flex: 1;
+        }
+
+        .testimonial-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: #1E4A6A;
+            margin-bottom: 4px;
+        }
+
+        .testimonial-location {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: #3D3D3D;
+        }
+
+        .stars {
+            color: #E76F51;
+            font-size: 18px;
+        }
+
+        /* Comparison Box */
+        .comparison {
+            background: white;
+            padding: 48px;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+            margin-top: 32px;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            margin-top: 32px;
+        }
+
+        .comparison-side {
+            padding: 32px;
+            border-radius: 12px;
+            background: #FAF8F3;
+        }
+
+        .comparison-side h4 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1E4A6A;
+            margin-bottom: 20px;
+            margin-top: 0;
+        }
+
+        .use-cases {
+            list-style: none;
+            padding: 0;
+        }
+
+        .use-cases li {
+            padding: 12px 0;
+            padding-left: 28px;
+            position: relative;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #3D3D3D;
+        }
+
+        .use-cases li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #E76F51;
+            font-weight: 700;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: #E0EFF0;
+            border-left: 4px solid #2A9D8F;
+            padding: 24px;
+            border-radius: 8px;
+            margin: 32px 0;
+        }
+
+        .info-box h4 {
+            margin-top: 0;
+            color: #1E4A6A;
+        }
+
+        /* Do's and Don'ts */
+        .dos-donts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            margin: 32px 0;
+        }
+
+        .dos, .donts {
+            background: white;
+            padding: 32px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .dos {
+            border-top: 4px solid #2A9D8F;
+        }
+
+        .donts {
+            border-top: 4px solid #D64545;
+        }
+
+        .dos h4 {
+            color: #2A9D8F;
+            margin-top: 0;
+        }
+
+        .donts h4 {
+            color: #D64545;
+            margin-top: 0;
+        }
+
+        .dos ul, .donts ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .dos li, .donts li {
+            padding: 12px 0;
+            padding-left: 32px;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .dos li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #2A9D8F;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        .donts li:before {
+            content: "✗";
+            position: absolute;
+            left: 0;
+            color: #D64545;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        /* Voice Examples */
+        .voice-example {
+            background: white;
+            padding: 24px;
+            border-radius: 8px;
+            margin: 16px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+
+        .good-example {
+            border-left: 4px solid #2A9D8F;
+        }
+
+        .bad-example {
+            border-left: 4px solid #D64545;
+        }
+
+        .example-label {
+            font-weight: 700;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .good-example .example-label {
+            color: #2A9D8F;
+        }
+
+        .bad-example .example-label {
+            color: #D64545;
+        }
+
+        /* Footer */
+        .footer {
+            background: #3D3D3D;
+            color: #e8e3db;
+            padding: 60px 24px;
+            text-align: center;
+        }
+
+        .footer h3 {
+            color: white;
+            margin-bottom: 24px;
+            opacity: 0.7;
+        }
+
+        .footer p {
+            opacity: 0.7;
+            margin-bottom: 12px;
+        }
+
+        .footer a {
+            color: #E76F51;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .mock-nav-links {
+                gap: 20px;
+            }
+            
+            .mock-phone-number {
+                display: none;
+            }
+            
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            h2 {
+                font-size: 36px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .container {
+                padding: 40px 20px;
+            }
+
+            .logo-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .mock-nav-bar {
+                padding: 16px 20px;
+            }
+
+            .mock-nav-links {
+                display: none;
+            }
+
+            .mock-logo-svg {
+                height: 40px;
+            }
+
+            .mock-nav-actions {
+                gap: 12px;
+            }
+            
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="sticky-nav">
+        <div class="nav-container">
+            <div class="nav-logo">Absolute Pro Plumbing</div>
+            <ul class="nav-links">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#logos">Logos</a></li>
+                <li><a href="#navbar">Navigation</a></li>
+                <li><a href="#colors">Colors</a></li>
+                <li><a href="#typography">Typography</a></li>
+                <li><a href="#voice">Voice & Tone</a></li>
+                <li><a href="#digital">Digital</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="hero">
+        <h1>ABSOLUTE PRO PLUMBING</h1>
+        <p>Brand Guidelines</p>
+        <p class="version">Version 1.0 | February 2026</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Section 1: Brand Overview -->
+        <section id="overview">
+            <span class="section-number">1</span>
+            <h2>Brand Overview</h2>
+            
+            <h3>Mission</h3>
+            <p>To provide reliable, professional plumbing services with the warmth and trustworthiness of a local expert who truly cares about the community we serve.</p>
+
+            <h3>Brand Personality</h3>
+            <div class="info-box">
+                <h4>Reliable</h4>
+                <p>We show up on time, do the job right, and stand behind our work.</p>
+            </div>
+
+            <div class="info-box">
+                <h4>Approachable</h4>
+                <p>We're the friendly local plumber, not the cold corporate service.</p>
+            </div>
+
+            <div class="info-box">
+                <h4>Professional</h4>
+                <p>We bring expertise and quality to every job.</p>
+            </div>
+
+            <div class="info-box">
+                <h4>Community-Focused</h4>
+                <p>We're part of the Bay Area fabric, represented by the iconic Golden Gate Bridge in our logo.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Logo Usage -->
+        <section id="logos">
+            <span class="section-number">2</span>
+            <h2>Logo Usage</h2>
+            
+            <h3>Logo Variations</h3>
+            <p>The Absolute Pro Plumbing logo suite features five variations, each designed for specific applications. All variations feature the Golden Gate Bridge symbolizing our Bay Area roots.</p>
+
+            <div class="logo-grid">
+                <div class="logo-card">
+                    <h4>Logo 1: Simplified Bridge</h4>
+                    <div class="logo-display">
+                        <img src="Logo 1.svg" alt="Absolute Plumbing Pro" class="logo-svg" width="1254" height="245" />
+                    </div>
+                    <p class="use-case">Use Case:</p>
+                    <p class="description">Primary logo for most applications. Clean, simplified bridge design.</p>
+                    <p class="use-case">Best For:</p>
+                    <p class="description">Website headers, business cards, letterheads, social media profile images.</p>
+                </div>
+
+                <div class="logo-card">
+                    <h4>Logo 2: Dynamic Wave Bridge</h4>
+                    <div class="logo-display">
+                        <img src="Logo 2.svg" alt="Absolute Plumbing Pro" class="logo-svg" width="1254" height="245" />
+                    </div>
+                    <p class="use-case">Use Case:</p>
+                    <p class="description">Enhanced version with dynamic water wave element and water droplets.</p>
+                    <p class="use-case">Best For:</p>
+                    <p class="description">Marketing materials, service vehicle graphics, promotional items where extra visual interest is desired.</p>
+                </div>
+
+                <div class="logo-card">
+                    <h4>Logo 3: Classic Bridge</h4>
+                    <div class="logo-display">
+                        <img src="Logo 3.svg" alt="Absolute Plumbing Pro" class="logo-svg" width="1254" height="245" />
+                    </div>
+                    <p class="use-case">Use Case:</p>
+                    <p class="description">Traditional bridge silhouette with extended cables.</p>
+                    <p class="use-case">Best For:</p>
+                    <p class="description">Professional documents, formal communications, official letterheads.</p>
+                </div>
+
+                <div class="logo-card">
+                    <h4>Logo 4: Bridge with Water Waves</h4>
+                    <div class="logo-display"> 
+                        <img src="Logo 4.svg" alt="Absolute Plumbing Pro" class="logo-svg" width="1254" height="245" />
+                    </div>
+                    <p class="use-case">Use Case:</p>
+                    <p class="description">Bridge with decorative water waves beneath in navy blue.</p>
+                    <p class="use-case">Best For:</p>
+                    <p class="description">Secondary marketing materials, email signatures, presentations.</p>
+                </div>
+
+                <div class="logo-card">
+                    <h4>Logo 5: Extended Bridge with Waves</h4>
+                    <div class="logo-display">
+                        <img src="Logo 5.svg" alt="Absolute Plumbing Pro" class="logo-svg" width="1254" height="245" />
+                    </div>
+                    <p class="use-case">Use Case:</p>
+                    <p class="description">Full-width bridge design with water waves below.</p>
+                    <p class="use-case">Best For:</p>
+                    <p class="description">Banners, website headers, large format prints, signage where horizontal space is available.</p>
+                </div>
+            </div>
+
+            <h3>Logo Specifications</h3>
+            <div class="info-box">
+                <p><strong>Colors:</strong> Bridge in Burnt Orange (#E76F51), waves in Warm Navy (#1E4A6A)</p>
+                <p><strong>Typography:</strong> Montserrat Bold for 'ABSOLUTE' and 'PRO', Montserrat Regular for 'PLUMBING INC.'</p>
+                <p><strong>Minimum Size:</strong> 2 inches wide for print, 200px wide for digital</p>
+                <p><strong>Clear Space:</strong> Maintain clear space equal to the height of 'PRO' around all sides</p>
+            </div>
+
+            <h3>Do's and Don'ts</h3>
+            <div class="dos-donts">
+                <div class="dos">
+                    <h4>DO:</h4>
+                    <ul>
+                        <li>Use the logo on cream, white, or very light backgrounds</li>
+                        <li>Maintain proper clear space around the logo</li>
+                        <li>Use high-resolution files for all applications</li>
+                        <li>Choose the logo variation that best fits your application</li>
+                    </ul>
+                </div>
+                <div class="donts">
+                    <h4>DON'T:</h4>
+                    <ul>
+                        <li>Stretch, distort, or alter the proportions</li>
+                        <li>Change the logo colors</li>
+                        <li>Add effects like drop shadows or gradients</li>
+                        <li>Place on busy or low-contrast backgrounds</li>
+                        <li>Mix elements from different logo variations</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2.5: Navigation Bar Examples -->
+        <section id="navbar">
+            <span class="section-number">2.5</span>
+            <h2>Navigation Bar Examples</h2>
+            <p>See how each logo variation looks in a real website navigation context. Each example demonstrates the logo with navigation links, phone number, and call-to-action button.</p>
+
+            <div class="nav-mockup-container">
+                <!-- Nav Mockup 1 -->
+                <div class="nav-mockup">
+                    <span class="nav-label">Logo 1: Simplified Bridge</span>
+                    <div class="mock-nav-bar">
+                        <div class="mock-logo-container">
+                            <img class="mock-logo-svg" src="Logo 1 nav.svg" alt="Absolute Plumbing Pro" class="logo-svg" width="1254" height="245" />
+                        </div>
+                        <div class="mock-nav-links">
+                            <span class="mock-nav-link">Services</span>
+                            <span class="mock-nav-link">About Us</span>
+                            <span class="mock-nav-link">Reviews</span>
+                            <span class="mock-nav-link">Contact</span>
+                        </div>
+                        <div class="mock-nav-actions">
+                            <span class="mock-phone-number">(510) 364-9926</span>
+                            <span class="mock-cta-button">
+                                <svg class="mock-phone-icon" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                </svg>
+                                Call Now
+                            </span>
+                        </div>
+                    </div>
+                    <div class="nav-description">
+                        <p><strong>Best For:</strong> Primary website navigation, clean and professional appearance with excellent readability.</p>
+                    </div>
+                </div>
+
+                <!-- Nav Mockup 2 -->
+                <div class="nav-mockup">
+                    <span class="nav-label">Logo 2: Dynamic Wave Bridge</span>
+                    <div class="mock-nav-bar">
+                        <div class="mock-logo-container">
+                            <img class="mock-logo-svg" src="Logo 2 nav.svg" alt="Absolute Plumbing Pro" class="logo-svg" width="1254" height="245" />
+                        </div>
+                        <div class="mock-nav-links">
+                            <span class="mock-nav-link">Services</span>
+                            <span class="mock-nav-link">About Us</span>
+                            <span class="mock-nav-link">Reviews</span>
+                            <span class="mock-nav-link">Contact</span>
+                        </div>
+                        <div class="mock-nav-actions">
+                            <span class="mock-phone-number">(510) 364-9926</span>
+                            <span class="mock-cta-button">
+                                <svg class="mock-phone-icon" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                </svg>
+                                Call Now
+                            </span>
+                        </div>
+                    </div>
+                    <div class="nav-description">
+                        <p><strong>Best For:</strong> Marketing-focused websites with dynamic visual interest, adds movement and energy.</p>
+                    </div>
+                </div>
+
+                <!-- Nav Mockup 3 -->
+                <div class="nav-mockup">
+                    <span class="nav-label">Logo 3: Classic Bridge</span>
+                    <div class="mock-nav-bar">
+                        <div class="mock-logo-container">
+                            <img class="mock-logo-svg" src="Logo 3 nav.svg" alt="Absolute Plumbing Pro" class="logo-svg" width="1254" height="245" />
+                        </div>
+                        <div class="mock-nav-links">
+                            <span class="mock-nav-link">Services</span>
+                            <span class="mock-nav-link">About Us</span>
+                            <span class="mock-nav-link">Reviews</span>
+                            <span class="mock-nav-link">Contact</span>
+                        </div>
+                        <div class="mock-nav-actions">
+                            <span class="mock-phone-number">(510) 364-9926</span>
+                            <span class="mock-cta-button">
+                                <svg class="mock-phone-icon" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                </svg>
+                                Call Now
+                            </span>
+                        </div>
+                    </div>
+                    <div class="nav-description">
+                        <p><strong>Best For:</strong> Corporate or professional service pages, emphasizes expertise and reliability.</p>
+                    </div>
+                </div>
+
+                <!-- Nav Mockup 4 -->
+                <div class="nav-mockup">
+                    <span class="nav-label">Logo 4: Bridge with Water Waves</span>
+                    <div class="mock-nav-bar">
+                        <div class="mock-logo-container">
+                            <img class="mock-logo-svg" src="Logo 4 nav.svg" alt="Absolute Plumbing Pro" class="logo-svg" width="1254" height="245" />
+                        </div>
+                        <div class="mock-nav-links">
+                            <span class="mock-nav-link">Services</span>
+                            <span class="mock-nav-link">About Us</span>
+                            <span class="mock-nav-link">Reviews</span>
+                            <span class="mock-nav-link">Contact</span>
+                        </div>
+                        <div class="mock-nav-actions">
+                            <span class="mock-phone-number">(510) 364-9926</span>
+                            <span class="mock-cta-button">
+                                <svg class="mock-phone-icon" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                </svg>
+                                Call Now
+                            </span>
+                        </div>
+                    </div>
+                    <div class="nav-description">
+                        <p><strong>Best For:</strong> Service-specific landing pages, clearly communicates plumbing expertise through water imagery.</p>
+                    </div>
+                </div>
+
+                <!-- Nav Mockup 5 -->
+                <div class="nav-mockup">
+                    <span class="nav-label">Logo 5: Extended Bridge with Waves</span>
+                    <div class="mock-nav-bar">
+                        <div class="mock-logo-container">
+                            <img class="mock-logo-svg" src="Logo 5 nav.svg" alt="Absolute Plumbing Pro" class="logo-svg" width="1254" height="245" />
+                        </div>
+                        <div class="mock-nav-links">
+                            <span class="mock-nav-link">Services</span>
+                            <span class="mock-nav-link">About Us</span>
+                            <span class="mock-nav-link">Reviews</span>
+                            <span class="mock-nav-link">Contact</span>
+                        </div>
+                        <div class="mock-nav-actions">
+                            <span class="mock-phone-number">(510) 364-9926</span>
+                            <span class="mock-cta-button">
+                                <svg class="mock-phone-icon" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                </svg>
+                                Call Now
+                            </span>
+                        </div>
+                    </div>
+                    <div class="nav-description">
+                        <p><strong>Best For:</strong> Wide-screen displays, landing pages, promotional microsites where horizontal space allows for maximum visual impact.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Color Palette -->
+        <section id="colors">
+            <span class="section-number">3</span>
+            <h2>Color Palette</h2>
+            <p>Our warm, approachable color palette balances professionalism with friendliness, using water-inspired blues alongside energetic orange accents.</p>
+
+            <h3>Primary Colors</h3>
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #E76F51;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Burnt Orange</div>
+                        <div class="color-hex">#E76F51</div>
+                        <div class="color-usage">Primary CTA buttons, emergency badges, key actions</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #1E4A6A;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Warm Navy</div>
+                        <div class="color-hex">#1E4A6A</div>
+                        <div class="color-usage">Headings, links, icons, professional elements</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #2A9D8F;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Teal-Green</div>
+                        <div class="color-hex">#2A9D8F</div>
+                        <div class="color-usage">Secondary buttons, accents, fresh water associations</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Functional Colors</h3>
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #D64545;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Warm Red</div>
+                        <div class="color-hex">#D64545</div>
+                        <div class="color-usage">Errors, warnings, destructive actions</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #3D3D3D;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Warm Charcoal</div>
+                        <div class="color-hex">#3D3D3D</div>
+                        <div class="color-usage">Body text, paragraphs</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #4a6875;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Slate Blue</div>
+                        <div class="color-hex">#4a6875</div>
+                        <div class="color-usage">Body text alternative, secondary copy, muted elements</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Background Colors</h3>
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #FAF8F3;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Cream</div>
+                        <div class="color-hex">#FAF8F3</div>
+                        <div class="color-usage">Primary background for website and materials</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #F4EDE4;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Soft Beige</div>
+                        <div class="color-hex">#F4EDE4</div>
+                        <div class="color-usage">Alternate sections, cards</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #E0EFF0;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Warm Light Blue</div>
+                        <div class="color-hex">#E0EFF0</div>
+                        <div class="color-usage">Subtle highlights, muted backgrounds</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Typography -->
+        <section id="typography">
+            <span class="section-number">4</span>
+            <h2>Typography</h2>
+
+            <h3>Two-Font System</h3>
+            <p>We use a complementary two-font system: <strong>Montserrat</strong> for professional, brand-focused content, and <strong>Merriweather</strong> for testimonials and customer voices. This pairing creates visual hierarchy while maintaining warmth and approachability.</p>
+
+            <div class="font-pair">
+                <span class="font-label">Primary: Montserrat</span>
+                <div class="montserrat-example">
+                    <div class="heading-sample">Fast, Reliable Plumbing Services</div>
+                    <div class="body-sample">
+                        Montserrat is our primary typeface for headings, navigation, buttons, and professional content. Its geometric shapes and clean lines convey expertise, reliability, and modern professionalism.
+                    </div>
+                </div>
+            </div>
+
+            <div class="font-pair">
+                <span class="font-label">Testimonials: Merriweather</span>
+                <div class="merriweather-example">
+                    <div class="testimonial-sample">
+                        "They arrived within 30 minutes of my call and fixed our burst pipe quickly. The technician was professional, kind, and took the time to explain everything. Highly recommend!"
+                    </div>
+                    <div class="testimonial-author">— Sarah Martinez, Oakland</div>
+                </div>
+            </div>
+
+            <h3>Live Testimonial Examples</h3>
+            <p>See how Merriweather brings warmth and authenticity to customer testimonials:</p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <div class="testimonial-text">
+                        Absolute Pro saved the day when our water heater failed on Christmas Eve. They came out immediately, were incredibly professional, and had us back up and running in no time.
+                    </div>
+                    <div class="testimonial-meta">
+                        <div class="testimonial-avatar">JC</div>
+                        <div class="testimonial-info">
+                            <div class="testimonial-name">James Chen</div>
+                            <div class="testimonial-location">Berkeley, CA</div>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <div class="testimonial-text">
+                        I've used Absolute Pro three times now, and they're always my first call. Fair pricing, honest work, and they treat you like family. Can't ask for more than that.
+                    </div>
+                    <div class="testimonial-meta">
+                        <div class="testimonial-avatar">MP</div>
+                        <div class="testimonial-info">
+                            <div class="testimonial-name">Maria Patel</div>
+                            <div class="testimonial-location">San Leandro, CA</div>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <div class="testimonial-text">
+                        As a property manager, I need plumbers I can trust. Absolute Pro is reliable, communicative, and their work is always top-notch. They're worth every penny.
+                    </div>
+                    <div class="testimonial-meta">
+                        <div class="testimonial-avatar">DW</div>
+                        <div class="testimonial-info">
+                            <div class="testimonial-name">David Williams</div>
+                            <div class="testimonial-location">Oakland, CA</div>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>When to Use Each Font</h3>
+            <div class="comparison">
+                <div class="comparison-grid">
+                    <div class="comparison-side">
+                        <h4>Montserrat (Sans-Serif)</h4>
+                        <ul class="use-cases">
+                            <li>Headlines and section titles</li>
+                            <li>Navigation menus</li>
+                            <li>Buttons and CTAs</li>
+                            <li>Body copy and descriptions</li>
+                            <li>Service names and features</li>
+                            <li>Pricing and numbers</li>
+                            <li>Footer content</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-side">
+                        <h4>Merriweather (Serif)</h4>
+                        <ul class="use-cases">
+                            <li>Customer testimonials</li>
+                            <li>Review quotes</li>
+                            <li>Customer stories</li>
+                            <li>Pullquotes from clients</li>
+                            <li>Featured feedback</li>
+                            <li>Case study testimonials</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Type Scale</h3>
+            <div class="type-sample">
+                <div class="h1-sample">H1: Main Headlines (36-48pt)</div>
+                <div class="h2-sample">H2: Section Headers (28-32pt)</div>
+                <div class="h3-sample">H3: Subsections (22-24pt)</div>
+                <div class="body-sample">Body Text: Standard paragraph text uses Montserrat Regular at 16-18pt for optimal readability across all devices and mediums.</div>
+            </div>
+
+            <h3>Font Weights</h3>
+            <div class="info-box">
+                <p><strong>Bold (700):</strong> Main headlines, logo text, important CTAs</p>
+                <p><strong>SemiBold (600):</strong> Subheadings, emphasized text, navigation</p>
+                <p><strong>Medium (500):</strong> Buttons, links, slight emphasis</p>
+                <p><strong>Regular (400):</strong> Body copy, paragraphs, standard text</p>
+            </div>
+
+            <h3>Best Practices</h3>
+            <ul style="padding-left: 24px;">
+                <li>Use line-height of 1.5-1.6 for body text to ensure readability</li>
+                <li>Keep paragraph widths between 50-75 characters for optimal reading</li>
+                <li>Use SemiBold for emphasis, not underlines or italics</li>
+                <li>Maintain consistent letter-spacing (tracking) at default settings</li>
+                <li>Use Merriweather in italic style for testimonials to add personal warmth</li>
+            </ul>
+
+            <h3>Web Implementation</h3>
+            <div class="info-box">
+                <p>Google Fonts import:</p>
+                <code style="display: block; margin-top: 12px; padding: 12px; background: white; border-radius: 4px; font-family: monospace;">
+&lt;link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"&gt;
+                </code>
+                <code style="display: block; margin-top: 12px; padding: 12px; background: white; border-radius: 4px; font-family: monospace;">
+&lt;link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"&gt;
+                </code>
+            </div>
+
+            <div class="info-box">
+                <h4>Why This Pairing Works</h4>
+                <p><strong>Visual Hierarchy:</strong> The contrast between geometric sans-serif (Montserrat) and humanist serif (Merriweather) creates clear distinction between brand voice and customer voice.</p>
+                <p style="margin-top: 16px;"><strong>Emotional Impact:</strong> Serif fonts feel more personal and handwritten, making testimonials feel more authentic and trustworthy.</p>
+                <p style="margin-top: 16px;"><strong>Professional + Warm:</strong> Together, they balance professionalism with approachability—exactly your brand personality.</p>
+            </div>
+        </section>
+
+        <!-- Section 5: Voice & Tone -->
+        <section id="voice">
+            <span class="section-number">5</span>
+            <h2>Voice & Tone</h2>
+
+            <h3>Our Voice</h3>
+            <p>We speak like a trusted neighbor who happens to be an expert plumber. Professional but never stuffy, knowledgeable but never condescending, efficient but never rushed.</p>
+
+            <h3>Voice Characteristics</h3>
+            <div class="info-box">
+                <h4>Warm & Friendly</h4>
+                <p>"We're here to help" not "Contact us for service"</p>
+            </div>
+
+            <div class="info-box">
+                <h4>Clear & Direct</h4>
+                <p>"We'll fix your leak fast" not "We provide expedited leak mitigation services"</p>
+            </div>
+
+            <div class="info-box">
+                <h4>Reassuring</h4>
+                <p>"Don't worry, we've got this" not "Plumbing problems require immediate professional attention"</p>
+            </div>
+
+            <div class="info-box">
+                <h4>Local</h4>
+                <p>"Serving the Bay Area since 2005" not "Regional service provider"</p>
+            </div>
+
+            <h3>Messaging Examples</h3>
+            
+            <h4>Website Headlines</h4>
+            <div class="voice-example good-example">
+                <p class="example-label">✓ DO:</p>
+                <p>"Fast, Reliable Plumbing When You Need It Most"</p>
+            </div>
+            <div class="voice-example bad-example">
+                <p class="example-label">✗ DON'T:</p>
+                <p>"Comprehensive Plumbing Solutions Provider"</p>
+            </div>
+
+            <h4>Emergency Messaging</h4>
+            <div class="voice-example good-example">
+                <p class="example-label">✓ DO:</p>
+                <p>"Pipe burst? We'll be there in 30 minutes or less."</p>
+            </div>
+            <div class="voice-example bad-example">
+                <p class="example-label">✗ DON'T:</p>
+                <p>"24/7 emergency response capabilities available"</p>
+            </div>
+        </section>
+
+        <!-- Section 6: Photography & Imagery -->
+        <section id="imagery">
+            <span class="section-number">6</span>
+            <h2>Photography & Imagery</h2>
+
+            <h3>Photography Style</h3>
+            <p>Use authentic, warm, professional imagery that shows real people and real work. Avoid stock photos that feel staged or corporate.</p>
+
+            <h3>Image Guidelines</h3>
+            <div class="info-box">
+                <h4>People</h4>
+                <p>Show friendly technicians, satisfied customers, local community</p>
+            </div>
+
+            <div class="info-box">
+                <h4>Workmanship</h4>
+                <p>Clean installations, professional tools, quality materials</p>
+            </div>
+
+            <div class="info-box">
+                <h4>Settings</h4>
+                <p>Real Bay Area homes and businesses, recognizable local landmarks</p>
+            </div>
+
+            <div class="info-box">
+                <h4>Lighting</h4>
+                <p>Natural, warm lighting that matches our brand warmth</p>
+            </div>
+
+            <h3>Icon Style</h3>
+            <ul style="padding-left: 24px;">
+                <li>Use simple, rounded icons that feel approachable</li>
+                <li>Primary color: Warm Navy (#1E4A6A)</li>
+                <li>Accent color: Teal-Green (#2A9D8F) for water-related icons</li>
+            </ul>
+        </section>
+
+        <!-- Section 7: Digital Applications -->
+        <section id="digital">
+            <span class="section-number">7</span>
+            <h2>Digital Applications</h2>
+
+            <h3>Website Design</h3>
+            <h4>Color Usage</h4>
+            <div class="info-box">
+                <p><strong>Background:</strong> Cream (#FAF8F3) as primary</p>
+                <p><strong>Primary CTAs:</strong> Burnt Orange (#E76F51) buttons with white text</p>
+                <p><strong>Secondary CTAs:</strong> Warm Navy (#1E4A6A) or Teal-Green (#2A9D8F)</p>
+                <p><strong>Links:</strong> Warm Navy (#1E4A6A) with underline on hover</p>
+            </div>
+
+            <h4>Button Styles</h4>
+            <div class="info-box">
+                <p><strong>Primary Button:</strong> Burnt Orange background, white text, rounded corners (8px), Montserrat SemiBold</p>
+                <p><strong>Secondary Button:</strong> Warm Navy border, Warm Navy text, transparent background, Montserrat Medium</p>
+                <p><strong>Hover States:</strong> Slight darkening (10-15%) with smooth 200ms transition</p>
+            </div>
+
+            <h3>Social Media</h3>
+            <div class="info-box">
+                <p><strong>Profile Images:</strong> Use logo on cream or white background</p>
+                <p><strong>Post Graphics:</strong> Warm backgrounds (cream/beige) with navy and orange accents, Montserrat typography</p>
+                <p><strong>Hashtags:</strong> #AbsoluteProPlumbing #BayAreaPlumber #LocalPlumber</p>
+            </div>
+
+            <h3>Email Marketing</h3>
+            <div class="info-box">
+                <p><strong>Header:</strong> Logo on cream background</p>
+                <p><strong>Body:</strong> White or cream background with warm charcoal text in Montserrat Regular</p>
+                <p><strong>CTAs:</strong> Burnt orange buttons with Montserrat SemiBold text</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <h3>Questions?</h3>
+        <p>These guidelines ensure consistency across all touchpoints while maintaining the warm, professional, and approachable character that makes Absolute Pro Plumbing trusted throughout the Bay Area.</p>
+    </div>
+</body>
+</html>
